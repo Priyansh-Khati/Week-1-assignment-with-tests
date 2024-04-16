@@ -7,7 +7,16 @@
 */
 
 function isPalindrome(str) {
+  var strRev = str.split("").reverse().join('');
+  if(str.toLowerCase()===strRev.toLowerCase()){
   return true;
+  }
+  else{
+    return false;
+  }
+  
 }
+
+// console.log(isPalindrome('paAP'));
 
 module.exports = isPalindrome;
